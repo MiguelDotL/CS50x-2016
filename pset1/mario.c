@@ -23,7 +23,7 @@ int main(void) {
         printf("Height: ");
         height = GetInt();
     }
-    while (height <= 0 || height >= 23);
+    while (height < 0 || height > 23);
     
     //execute rows-------------------------------------------------
     for (int row = 0; row < height; row++) {

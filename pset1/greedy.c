@@ -20,43 +20,45 @@ int main(void) {
     
     //quarters
     qCount = centsLeft / 25;
-        if (qCount == 1) {
+       /* if (qCount == 1) {
             printf("%i quarter\n", qCount);
         }
         else {
             printf("%i quarters\n", qCount);
-        }
+        }*/
     centsLeft %= 25;
     
     //dimes
     dCount = centsLeft / 10;
-        if (dCount == 1) {
+       /* if (dCount == 1) {
             printf("%i dime\n", dCount);
         }
         else {
             printf("%i dimes\n", dCount);
-        }
+        }*/
     centsLeft %= 10;
     
     //nickles
     nCount = centsLeft / 5;
-        if (nCount == 1) {
+        /*if (nCount == 1) {
             printf("%i nickle\n", nCount);
         }
         else {
             printf("%i nickles\n", nCount);
-        }
+        }*/
     centsLeft %= 5;
     
     //pennies
-    if (centsLeft == 1) {
+    /*if (centsLeft == 1) {
         printf("%i penny\n", centsLeft);
     }
     else {
         printf("%i pennies\n", centsLeft);
-    }
+    }*/
     
     //do Total
     int totalCoins = qCount + dCount + nCount + centsLeft;
-    printf("%i coins in total.\n", totalCoins);
+    // printf("%i coins in total.\n", totalCoins);
+    printf("%i\n", totalCoins);
+
 }
